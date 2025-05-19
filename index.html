@@ -8,8 +8,20 @@
 </head>
 <body>
   <h1>Chess Game</h1>
+  <div id="controls">
+    <button id="modeToggleBtn">Switch to Human vs Human</button>
+    <button id="undoBtn" disabled>Undo Move</button>
+  </div>
+  <div id="timers">
+    <div>White: <span id="whiteTimer">05:00</span></div>
+    <div>Black: <span id="blackTimer">05:00</span></div>
+  </div>
   <div id="chessboard"></div>
   <div id="status"></div>
+  <div id="moveHistoryContainer">
+    <h2>Move History</h2>
+    <ol id="moveHistory"></ol>
+  </div>
   <button id="restartBtn">Restart Game</button>
   <script src="script.js"></script>
   <script>
